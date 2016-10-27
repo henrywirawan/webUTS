@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="footer.css">
+
+	<head>
+		<title>Figure | Shop</title>
+		<style type="text/css">
+			@import url(http://weloveiconfonts.com/api/?family=entypo);
+			/* entypo */
+			[class*="entypo-"]:before {
+	 			font-family: 'entypo', sans-serif;
+ 		 		
+			}
+
+			body{
+				font-family: "Montserrat",arial,serif;
+			}
+			body{
+				color: #3a3a3a;
+				font-size: 12px;
+				line-height: 1.55;
+				letter-spacing: 1.22px;
+			}
+
+
+
+			strong{
+				font-weight: 700;
+			}
+
+			img{
+				max-width: 100%;
+				height: auto;
+				border:1px solid #e6e6e6;
+			}
+
+			a{
+				color: #5d83de;
+				text-decoration: none;
+				transition:0.3s;
+				
+			}
+
+
+
+			a:hover{
+				color: #3343d2;
+				transition:0.3s;
+			}
+
+			i{
+				font-style: normal;
+			}
+
+			.wrapper{
+				top:0px;
+				margin-top:-16px;
+				margin-left:-10px;
+				margin-right:-10px;
+
+			}
+
+			
+
+			
+
+			.body-title-text{
+				float:left;
+				
+			}
+
+			.body-title-text h2{
+				font-size: 16px;
+				margin-left:150px;
+			}
+
+			.body-title-text h2 span{
+				padding-left:20px;
+			}
+
+			.body-title{
+				width:100%;
+				float:left;
+				margin-top:70px;
+				padding:8px 0;
+				background:rgba(0,0,0,0.4);
+				background-color: #f3f3f3;
+			}
+
+
+
+
+
+			/*******body******/
+			.body{
+				margin-top: 40px;
+				width:1200px;
+				
+				float:left;
+			}
+
+			.body-wrapper{
+				margin:0 auto;
+				width:1200px;
+
+			}
+			
+			
+
+			.sidebar{
+				width:300px;
+				float:left;
+				
+				font-size:135%;
+
+
+
+			}
+
+			.sidebar-categories{
+				width:260px;
+				height:250px;
+				margin:0 auto;
+				
+				border:1px solid #d6d6d6;
+				
+			}
+
+			.sidebar-title{
+				width:200px;
+				float:left;
+				padding-left: 60px;
+				border-bottom:1px solid #d6d6d6;
+				margin-bottom: 30px;
+			}
+
+			.sidebar-categories li{
+				
+				margin-left: 30px;
+				font-weight: bold;
+				line-height: 28px;
+
+			}
+
+			.sidebar-categories li a{
+				color: #3a3a3a;
+			}
+
+			.sidebar-categories li a:hover{
+				color: #808080;
+			}
+
+			.all-product-wrapper{
+				float:left;
+				width:900px;
+			}
+
+
+			
+			.sortby, .viewas{
+				border:1px solid #d6d6d6;
+				float:left;
+				width:448px;
+				height:48px;
+				font-size:20px;		
+			}
+
+
+			.viewas{
+				border-left:0;
+			}
+			
+			.sortby select, .viewas select {
+				text-transform: uppercase;
+				border: 0;
+				line-height: 48px;
+				padding: 0 25px 0 10px;
+				height: 48px;
+				float:right;
+				color: #2f383d;
+				text-indent: 0.01px;
+				text-overflow: '';
+				cursor: pointer;
+				-moz-appearance: none;
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAS0lEQVQImW3KUQ2AMBCD4UqYlMv9FTApOEMKEpCAhEkYLwshB0360q8CdmD+9IiIJkkCzoLXg5IUEQ0YC4ftrhrbHZiZuX3wfarbDfzJHdvyiD8hAAAAAElFTkSuQmCC");
+				background-repeat: no-repeat;
+				background-position: right 22px;
+				margin-right:10px;
+			}
+
+			.sortby-text, .viewas-text{
+				float: left;
+				font-size: 12px;
+				color: #2f383d;
+				line-height: 48px;
+				padding-left: 26px;
+				letter-spacing: 0.35em;
+				text-transform: uppercase;
+				margin-left: 100px;
+				font-weight: bolder;
+				margin-top:1.5px;
+			}
+			.item-product{
+
+				float:left;
+				width: 33.333%;
+				text-align: center;
+				
+				margin-top: 20px;
+			}
+
+			.item-product-wrapper{
+				margin:0 auto;
+				width:90%;
+			}
+
+			.product-image{
+				float:left;
+				display: block;
+				border: #e6e6e6 solid 1px;
+				width: 100%;
+				height:auto;
+				margin:0 auto;
+				background:white;
+
+			}
+
+			.product-image img{
+				margin:0 auto;
+				border:0;
+
+			}
+
+			.image-wrapper{
+				width:100%;
+				height:200px;
+
+			}
+			.action{
+				position: absolute;
+				opacity:0;
+				visibility: hidden;
+				transition: 0.3s;
+				cursor:default;
+			}
+
+
+			.addtocart{
+				display: inline-block;
+				vertical-align: top;
+				width: 180px;
+				color: #808080;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				font-size: 12px;
+				font-weight: 600;
+				display: inline-block;
+				overflow: hidden;
+				height: 50px;
+				margin-left:88px;
+				margin-top:-52px;
+				border:1px solid #d9d9d9;
+				background:rgba(255,255,255,0.93);
+			}
+
+			.product-action{
+				overflow: hidden;
+				
+			}
+			.product-action:hover .action{
+				opacity: 1;
+				visibility: visible;
+				transition: 0.5s;
+			}
+
+			.addtocart .entypo-basket{
+				float: left;
+				padding: 0px 10px;
+				font-size: 18px;
+				position: relative;
+				top: 0px;
+				margin-right: 5px;
+				border-right: #d9d9d9 solid 1px;
+				font-style: normal;
+				line-height: 32px;
+				margin-top: 10px;
+			}
+
+			.btn-cart{
+				display: inline-block;
+				width: auto;
+				background:rgba(0,0,0,0);
+				color: #808080;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				font-size: 12px;
+				font-weight: 600;
+				float: left;
+				border: none;
+				text-align: left;
+				height: 50px;
+				cursor: pointer;
+				transition:0.3s;
+			}
+
+			.btn-cart:hover{
+				transition:0.3s;
+				color:black;
+				letter-spacing: 0.2em;
+			}
+
+
+
+			.product-content{
+				float:left;
+				padding:10px 0;
+				width:100%;
+			}
+
+			h3.product-name{
+
+				font-size: 18px;
+				font-weight: bold;
+				
+			}
+
+			h3.product-name a{
+				text-transform: uppercase;
+				font-size: 12px;
+				font-weight: 600;
+				letter-spacing: 0.05em;
+
+			}
+
+			.price{
+				font-weight: bolder;
+			}
+
+
+
+
+
+			
+			
+
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="navbar1">
+					<div class="logo-container">
+						<a href="home.html"><img src="images/logo.png" alt="logo"></a>
+					</div>
+					<div class="left-menu">
+						<ul>
+							<li class=li-home><a href="home.html">Home<span class="underline"></span></a></li>
+							<li class=li-shop><a href="shop.html">Shop<span class="underline"></span></a></li>
+							<li class=li-about><a href="about.html">About<span class="underline"></span></a></li>
+						</ul>
+					</div>
+					<div class="right-menu">
+						<ul>
+							<li class="inline li-menu"><span class="entypo-menu span-inline"></span>
+								<div class="switcher-content-menu">
+									<div class="switcher-content">
+										<ul class="links">
+											<li>
+												<a href="login.html">Sign In</a>
+											</li>
+											<li>
+												<a href="create account.html">Create an Account</a>
+											</li>
+										
+										</ul>
+										<div class="block-currency">
+											<div class="title-selector">
+												<span>Currency</span>
+											</div>
+											<div class="block-content">
+												<ul class="setting-currency">
+													<li class=""><a href="#">IDR</a></li>
+													<li class="selected"><a href="#">USD</a></li>
+												</ul> 
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="inline li-basket"><span class="entypo-basket span-inline"></a>
+								<div class="switcher-content-basket">
+									<div class="switcher-content">
+										<div class="cart-checkout">
+											<a href="shopping cart.html" class="btn-button view-cart">
+												<span>View Cart</span>
+											</a>
+											<a href="checkout.html" class="btn-button checkout-cart">
+												<span>Checkout</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="inline li-search"><span class="entypo-search span-inline"></span>
+								<div class="switcher-content-search">
+									<div class="switcher-content">
+
+
+											<div class="input-group form-search"> 
+												<input value="" placeholder="Search our store" class="input-group-field" type="search">
+												<button type="submit" class="btn-button"> 
+													<span><span><i class="entypo-search"></i></span></span> 
+												</button>
+											</div>
+										
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+
+			</div>
+			<div class="body-title">
+				<span class="body-title-text"><h2 class=entypo-home><span>Home / Shop</span></h2></span>
+			</div>	
+			<div class="body-wrapper">
+				<div class="body">
+					<div class="sidebar">
+						<div class="sidebar-categories">
+							<span class="sidebar-title"><h2>Categories</h2></span>
+							<ul>
+								<li><a href="">Marvel</a></li>
+								<li><a href="">DC Comics</a></li>
+								<li><a href="">Others</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="all-product-wrapper">
+					
+						<div class="sortby">
+							<span class="sortby-text">Sort by:</span>
+							<select class="field" name="sort-by">
+								<option selected="selected">Name, A-Z</option>
+								<option>Featured</option>
+								<option>Best Selling</option>
+								<option>Price, hight to low</option>
+								<option>Price, low to high</option>
+
+							</select>
+						</div>
+						<div class="viewas">
+							<span class="viewas-text">View as:</span>
+							<select class="field" name="limiter">
+								<option selected="selected">12 Items/page</option>
+								<option>16 Items/page</option>
+								<option>32 Items/page</option>
+								<option>All</option>
+
+							</select>
+						</div>
+					
+						<div class="item-product">
+							<div class="item-product-wrapper">
+								<div class="product-action"> 
+									<div class="image-wrapper">
+			  							<a href="individual product.html" class="product-image">
+			  								<img src="images/product1.jpg" alt="Funko POP Marvel: Captain America 3: Civil War - Scarlet Witch ">
+			  							</a>
+		  							</div>
+		  							<div class="action">
+										<div class="addtocart">
+											<div class="entypo-basket"></div>
+											<span class="seperator"></span>
+											<button type="submit" class="btn-cart">
+												<span>
+													<span>Add to Cart</span>
+												</span>
+											</button>
+											<span class="seperator"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-content">
+									<h3 class="product-name">
+	  									<a href="" title="Funko POP Marvel: Captain America 3: Civil War - Scarlet Witch ">
+
+											Funko POP Marvel: Captain America 3: Civil War - Scarlet Witch
+											
+	  									</a>
+	  								</h3>
+
+	  								<div class="price">
+
+	  									<span class="money">$22.75</span>
+	  								</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item-product">
+							<div class="item-product-wrapper">
+								<div class="product-action"> 
+									<div class="image-wrapper">
+			  							<a href="" class="product-image">
+			  							<img src="images/product2.jpg" alt="Funko POP Marvel: Captain America 3: Civil War - Black Panther ">
+			  							</a>
+		  							</div>
+		  							<div class="action">
+										<div class="addtocart">
+											<div class="entypo-basket"></div>
+											<span class="seperator"></span>
+											<button type="submit" class="btn-cart">
+												<span>
+													<span>Add to Cart</span>
+												</span>
+											</button>
+											<span class="seperator"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-content">
+									<h3 class="product-name">
+	  									<a href="" title="Funko POP Marvel: Captain America 3: Civil War - Black Panther ">
+
+											Funko POP Marvel: Captain America 3: Civil War - Black Panther 
+											
+	  									</a>
+	  								</h3>
+
+	  								<div class="price">
+
+	  									<span class="money">$22.75</span>
+	  								</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item-product">
+							<div class="item-product-wrapper">
+								<div class="product-action"> 
+									<div class="image-wrapper">
+			  							<a href="" class="product-image">
+			  								<img src="images/product3.jpg" alt="Arkham Asylum Joker">
+			  							</a>
+		  							</div>
+		  							<div class="action">
+										<div class="addtocart">
+											<div class="entypo-basket"></div>
+											<span class="seperator"></span>
+											<button type="submit" class="btn-cart">
+												<span>
+													<span>Add to Cart</span>
+												</span>
+											</button>
+											<span class="seperator"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-content">
+									<h3 class="product-name">
+	  									<a href="" title="Funko POP DC Comics: Arkham Asylum Joker">
+
+											Funko POP Marvel: Captain America 3: Civil War - Black Widow 
+											
+	  									</a>
+	  								</h3>
+
+	  								<div class="price">
+
+	  									<span class="money">$22.75</span>
+	  								</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item-product">
+							<div class="item-product-wrapper">
+								<div class="product-action"> 
+									<div class="image-wrapper">
+			  							<a href="" class="product-image">
+			  								<img src="images/product4.jpg" alt="Funko POP Marvel: Captain America 3: Civil War - Captain America 125 r">
+			  							</a>
+		  							</div>
+		  							<div class="action">
+										<div class="addtocart">
+											<div class="entypo-basket"></div>
+											<span class="seperator"></span>
+											<button type="submit" class="btn-cart">
+												<span>
+													<span>Add to Cart</span>
+												</span>
+											</button>
+											<span class="seperator"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-content">
+									<h3 class="product-name">
+	  									<a href="" title="Funko POP DC Comics: Arkham Asylum Joker">
+
+											Funko POP Marvel: Captain America 3: Civil War - Captain America 125 
+											
+	  									</a>
+	  								</h3>
+
+	  								<div class="price">
+
+	  									<span class="money">$22.75</span>
+	  								</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item-product">
+							<div class="item-product-wrapper">
+								<div class="product-action"> 
+									<div class="image-wrapper">
+			  							<a href="" class="product-image">
+			  								<img src="images/product5.jpg" alt="Arkham Asylum Joker">
+			  							</a>
+		  							</div>
+		  							<div class="action">
+										<div class="addtocart">
+											<div class="entypo-basket"></div>
+											<span class="seperator"></span>
+											<button type="submit" class="btn-cart">
+												<span>
+													<span>Add to Cart</span>
+												</span>
+											</button>
+											<span class="seperator"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-content">
+									<h3 class="product-name">
+	  									<a href="" title="Funko POP DC Comics: Arkham Asylum Joker">
+
+											Funko POP Marvel: Captain America 3: Civil War - Captain America 137 (Action Pose) 
+											
+	  									</a>
+	  								</h3>
+
+	  								<div class="price">
+
+	  									<span class="money">$22.75</span>
+	  								</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item-product">
+							<div class="item-product-wrapper">
+								<div class="product-action"> 
+									<div class="image-wrapper">
+			  							<a href="" class="product-image">
+			  								<img src="images/product8.jpg" alt="Arkham Asylum Joker">
+			  							</a>
+		  							</div>
+		  							<div class="action">
+										<div class="addtocart">
+											<div class="entypo-basket"></div>
+											<span class="seperator"></span>
+											<button type="submit" class="btn-cart">
+												<span>
+													<span>Add to Cart</span>
+												</span>
+											</button>
+											<span class="seperator"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-content">
+									<h3 class="product-name">
+	  									<a href="" title="Funko POP DC Comics: Arkham Asylum Joker">
+
+											Funko POP Marvel: Captain America 3: Civil War - Iron Man Exclusive Unmasked 136 
+											
+	  									</a>
+	  								</h3>
+
+	  								<div class="price">
+
+	  									<span class="money">$22.75</span>
+	  								</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-wrapper">
+				<div class="footer">
+					<div class="footer-content1">
+						<div class="footer-logo">
+							<div class="footer-logo-container">
+								<img class="footer-logo-image" src="images/logo.png" alt="logo">
+							</div>
+						</div>
+						<div class="footer-followus">
+							<span class=followus-text><h2>Follow Us</h2></span>
+							<div class="followus-logo">
+								<ul>
+									<li><a class="entypo-instagrem" href="https://www.instagram.com"></a></li>
+									<li><a class="entypo-facebook" href="https://www.facebook.com/"></a></li>
+								</ul>	
+								
+							</div>
+						</div>
+					</div>
+					<div class="footer-content2">
+						<div class="content2-container">
+							<span class="newsletter-signup-text"><h2>Newsletter Signup</h2></span>
+							<div class="subscribe-container">
+								<input class="subscribe-input-text" type="text" placeholder="email@example.com">
+								<input class="subscribe-button" type="button" value="Subscribe">
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-content3">
+						<div class="content3-a">
+							<div class="content3-a-container">
+								<h2>Contact Us</h2>
+								<ul>
+									<li>figure@ymail.com</li>
+									<li>+62822888395</li>
+								</ul>
+							</div>
+						</div>
+						<div class="content3-b">
+							<div class="content3-b-container">
+							<h2>Customer Service</h2>
+								<ul>
+									<li>Mon-Sat(09.00-18.00)</li>
+									<li>Sat-Sun(10.00-13.00)</li>
+									<li>National Holiday(Closed)</li>
+								</ul>
+							</div>
+						
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="footer-copyright">
+					<span class="text-copyright">Copyright &copy 2016 Henry. All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

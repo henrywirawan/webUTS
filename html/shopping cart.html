@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="checkout.css">
+
+	<head>
+		<title>Figure | Cart</title>
+		<style type="text/css">
+			@import url(http://weloveiconfonts.com/api/?family=entypo);
+			/* entypo */
+			[class*="entypo-"]:before {
+	 			font-family: 'entypo', sans-serif;
+ 		 		
+			}
+
+			body{
+				font-family: "Montserrat",arial,serif;
+			}
+			body{
+				color: #3a3a3a;
+				font-size: 12px;
+				line-height: 1.55;
+				letter-spacing: 1.22px;
+			}
+
+
+
+			strong{
+				font-weight: 700;
+			}
+
+			img{
+				max-width: 100%;
+				height: auto;
+				border:1px solid #e6e6e6;
+			}
+
+			a{
+				color: #5d83de;
+				text-decoration: none;
+				transition:0.3s;
+				
+			}
+
+
+
+			a:hover{
+				color: #3343d2;
+				transition:0.3s;
+			}
+
+			i{
+				font-style: normal;
+			}
+
+			.wrapper{
+				top:0px;
+				margin-top:-16px;
+				margin-left:-10px;
+				margin-right:-10px;
+
+			}
+
+
+			
+
+			
+
+
+			.body-title-text{
+				float:left;
+				
+			}
+
+			.body-title-text h2{
+				font-size: 16px;
+				margin-left:150px;
+			}
+
+			.body-title-text h2 span{
+				padding-left:20px;
+			}
+
+			.body-title{
+				width:100%;
+				float:left;
+				margin-top:70px;
+				padding:8px 0;
+				background:rgba(0,0,0,0.4);
+				background-color: #f3f3f3;
+			}
+			/*******body******/
+			/*****************/
+			.body{
+				margin-top: 40px;
+				width:1200px;
+				
+				float:left;
+			}
+
+			.body-wrapper{
+				margin:0 auto;
+				width:1200px;
+
+			}
+
+			.left-content, .right-content{
+				margin-bottom: 20px;
+			}
+
+
+			.left-content{
+				width:800px;
+				float:left;
+				
+				
+				
+			}
+
+			.left-content table{
+				border-spacing: 0;
+				border-collapse: collapse;
+				
+				float: left;
+				width: 100%;
+
+			}
+
+			.left-content table th{
+				padding: 10px 0;
+				vertical-align: middle;
+				white-space: nowrap;
+				text-align: center;
+				font-weight: 700;
+				border-bottom: 2px solid #e5e5e5;
+
+			}
+
+			th.shopping-cart{
+				font-size:20px;
+				text-align: left;
+				padding-left:20px;
+			}
+
+			span.space{
+				width:150px;
+				float:left;
+			}
+
+			.left-content table thead{
+				border-bottom: 2px solid #e5e5e5;
+			}
+
+			.left-content table tbody tr{
+				border-bottom: 2px solid #e5e5e5;
+			}
+
+			.left-content tbody td{
+				
+			}
+
+			.left-content table tr td{
+				padding:10px;
+			}
+			
+
+			table img{
+				border: 0;
+				outline: none;
+				vertical-align: middle;
+				float:left;
+				max-width:120px;
+				height:auto;
+				
+				
+				
+			}
+
+			table a{
+				color: #5d83de;
+				text-decoration: none;
+				font-size: 14px;
+			}
+
+			.edit-item{
+				float:left;
+				padding-right: 7px;
+				margin-right: 3px;
+				cursor:pointer;
+				font-weight: bold;
+			}
+
+			.seperator{
+				float:left;
+				background-color: #666666;
+				width: 1px;
+				height: 11px;
+				box-sizing: border-box;
+				margin-top:6.5px;
+			}
+
+			.remove-item{
+				float:left;
+				position: relative;
+				padding-left: 7px;
+				margin-left: 3px;
+				cursor: pointer;
+				font-weight: bold;
+			}
+
+			.cart-price{
+				font-size: 15px;
+			}
+
+			.reduce, .increase{
+				background-color: #f1f1f1;
+				border: medium none;
+				color: #9aa7af;
+				display: inline-block;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				width: 20px;
+				cursor: pointer;
+				border-radius: 0;
+				font-weight: bolder;
+				float:left;
+				margin-top:4px;
+				font-size:14px;
+			}
+
+			.td-quantity{
+				width:80px;
+			}
+
+			.left-content tbody input{
+				width: 22px;
+				margin: 0 2px;
+				padding:4px 2px;
+				text-align: center;
+				border: 1px solid #e5e5e5;
+				max-width: 100%;
+				font-family: inherit;
+				font-size: inherit;
+				line-height: inherit;
+				font: inherit;
+				color: inherit;
+				float:left;
+				margin-left: 5px;
+				margin-right: 5px
+			}
+
+
+			.right-content{
+				width:370px;
+				float:left;
+				
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+
+			.checkout{
+				background-color: #f4f4f4;
+				padding: 14px 14px;
+				width: 342px;
+				float: left;
+			}
+
+			.right-content table{
+				border: none;
+				background: transparent;
+				text-align: left;
+				border-collapse: collapse;
+				width: 100%;
+				border-spacing: 0;
+				box-sizing: border-box;
+			}
+
+			.right-content tfoot{
+				border-top: 2px solid #555555;
+
+			}
+			.right-content tfoot tr td{
+				font-size: 15px;
+				line-height: 24px;
+				font-weight: bold;
+				line-height: 24px;
+				padding: 2px 3px;
+			}
+			.right-content tbody tr td{
+				font-size: 15px;
+				line-height: 24px;
+				font-weight: bold;
+				line-height: 24px;
+				padding: 2px 3px;
+			}
+			
+			.checkout-types{
+				margin: 10px 0 0;
+				list-style: none outside none;
+				box-sizing: border-box;
+			}
+
+			.checkout-types li{
+				text-align: center;
+				padding: 0 0 12px;
+				list-style: none;
+				margin-left:-15px;
+				font-weight:bold; 
+			}
+
+			.btn-button.uppercase{
+				text-transform: uppercase;
+				cursor: pointer;
+				background-color: #15a63a;
+				color: #fff;
+				border: solid 2px #369844;
+				display: inline-block;
+				font-size: 12px;
+				line-height: 20px;
+				height: auto;
+				padding: 14px 26px;
+				margin: 0;
+				font-weight: bold;
+				position: static;
+				overflow: hidden;
+				outline: none;
+				text-shadow: none;
+				text-decoration: none;
+				vertical-align: middle;
+				letter-spacing: 1px;
+				max-width: 100%;
+			}
+
+			.btn-button.uppercase:hover{
+				transition:0.2s;
+				background-color: #17ce41;
+				color: #17ce41;
+			}
+
+
+			.checkout{
+				width:100%;
+				height:100%;
+				z-index: 11;
+				
+			}
+
+
+			
+
+		</style>
+		
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="navbar1">
+					<div class="logo-container">
+						<a href="home.html"><img src="images/logo.png" alt="logo"></a>
+					</div>
+					<div class="left-menu">
+						<ul>
+							<li class=li-home><a href="home.html">Home<span class="underline"></span></a></li>
+							<li class=li-shop><a href="shop.html">Shop<span class="underline"></span></a></li>
+							<li class=li-about><a href="about.html">About<span class="underline"></span></a></li>
+						</ul>
+					</div>
+					<div class="right-menu">
+						<ul>
+						
+
+
+							<li class="inline li-menu"><span class="entypo-menu span-inline"></span>
+								<div class="switcher-content-menu">
+									<div class="switcher-content">
+										<ul class="links">
+											<li>
+												<a href="login.html">Sign In</a>
+											</li>
+											<li>
+												<a href="create account.html">Create an Account</a>
+											</li>
+										
+										</ul>
+										<div class="block-currency">
+											<div class="title-selector">
+												<span>Currency</span>
+											</div>
+											<div class="block-content">
+												<ul class="setting-currency">
+													<li class=""><a href="#">IDR</a></li>
+													<li class="selected"><a href="#">USD</a></li>
+												</ul> 
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="inline li-basket"><span class="entypo-basket span-inline"></a>
+								<div class="switcher-content-basket">
+									<div class="switcher-content">
+										<div class="cart-checkout">
+											<a href="shopping cart.html" class="btn-button view-cart">
+												<span>View Cart</span>
+											</a>
+											<a href="checkout.html" class="btn-button checkout-cart">
+												<span>Checkout</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="inline li-search"><span class="entypo-search span-inline"></span>
+								<div class="switcher-content-search">
+									<div class="switcher-content">
+
+
+											<div class="input-group form-search"> 
+												<input value="" placeholder="Search our store" class="input-group-field" type="search">
+												<button type="submit" class="btn-button"> 
+													<span><span><i class="entypo-search"></i></span></span> 
+												</button>
+											</div>
+										
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+
+			</div>
+			<div class="body-title">
+				<span class="body-title-text">
+					<h2 class=entypo-home><span>Home / Your Shopping Cart </h2></span>
+				</span>
+			</div>
+
+			<div class="body-wrapper">
+				<div class="body">
+					<div class="left-content">
+						<table class="cart-table">
+							<thead>
+								<tr>
+									<th class="shopping-cart">Shopping Cart</th>
+									<th class="text-center1"><span class="space"></span></th>
+									<th class="text-center">Price</th>
+									<th class="text-center">Quantity</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="product-image"><img src="images/product1.jpg" alt="product"></td>
+									<td class="text-left">
+										<h5 class="product-name"><a href="">Funko POP Marvel: Captain America 3: Civil War - Black Panther</a></h5>
+										<div class="cart-action">
+											<a class="edit-item">Edit</a>
+											<span class="seperator"></span>
+											<a class="remove-item">Remove</a>
+										</div>
+									</td>
+									<td>
+										<span class="cart-price">$22.75</span>
+									</td>
+									<td class="td-quantity">
+										<span class="reduce">-</span>
+										<input type="text" value="1">
+										<span class="increase">+</span>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="product-image"><img src="images/product2.jpg" alt="product"></td>
+									<td class="text-left">
+										<h5 class="product-name"><a href="">Funko POP Marvel: Captain America 3: Civil War - Black Panther</a></h5>
+										<div class="cart-action">
+											<a class="edit-item">Edit</a>
+											<span class="seperator"></span>
+											<a class="remove-item">Remove</a>
+										</div>
+									</td>
+									<td>
+										<span class="cart-price">$22.75</span>
+									</td>
+									<td>
+										<span class="reduce">-</span>
+										<input type="text" value="2">
+										<span class="increase">+</span>
+									</td>
+								</tr>
+							</tbody>
+							
+						</table>
+
+					</div>
+
+					<div class="right-content">
+						<div class="checkout">
+							<table id="shopping-cart-totals-table"> 
+				   			<tfoot>
+								<tr>
+				          			<td class="a-right" colspan="1">
+				   						<strong>Grand Total</strong>
+				    				</td>
+				     				<td class="a-right">
+				       					<strong><span class="price"></span>$75.00</strong>
+				        			</td>
+				    			</tr>
+								</tfoot>
+				        		<tbody>
+				         		<tr>
+				          			<td class="a-right" colspan="1">Subtotal</td>
+				           			<td class="a-right">
+				             			<span class="price">$75.00</span>    
+				             		</td>
+				             	</tr>
+				    			</tbody>
+				            </table>
+							<ul class="checkout-types">
+								<li>
+									<a href="checkout.html"><input name="checkout" class="btn-button uppercase" value="Proceed to checkout" type="submit"></a>
+								</li>
+								<li>Shipping &amp; taxes calculated at checkout</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-wrapper">
+				<div class="footer">
+					<div class="footer-content1">
+						<div class="footer-logo">
+							<div class="footer-logo-container">
+								<img class="footer-logo-image" src="images/logo.png" alt="logo">
+							</div>
+						</div>
+						<div class="footer-followus">
+							<span class=followus-text><h2>Follow Us</h2></span>
+							<div class="followus-logo">
+								<ul>
+									<li><a class="entypo-instagrem" href="https://www.instagram.com"></a></li>
+									<li><a class="entypo-facebook" href="https://www.facebook.com/"></a></li>
+								</ul>	
+								
+							</div>
+						</div>
+					</div>
+					<div class="footer-content2">
+						<div class="content2-container">
+							<span class="newsletter-signup-text"><h2>Newsletter Signup</h2></span>
+							<div class="subscribe-container">
+								<input class="subscribe-input-text" type="text" placeholder="email@example.com">
+								<input class="subscribe-button" type="button" value="Subscribe">
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-content3">
+						<div class="content3-a">
+							<div class="content3-a-container">
+								<h2>Contact Us</h2>
+								<ul>
+									<li>figure@ymail.com</li>
+									<li>+62822888395</li>
+								</ul>
+							</div>
+						</div>
+						<div class="content3-b">
+							<div class="content3-b-container">
+							<h2>Customer Service</h2>
+								<ul>
+									<li>Mon-Sat(09.00-18.00)</li>
+									<li>Sat-Sun(10.00-13.00)</li>
+									<li>National Holiday(Closed)</li>
+								</ul>
+							</div>
+						
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="footer-copyright">
+					<span class="text-copyright">Copyright &copy 2016 Henry. All rights reserved.</span>
+				</div>
+			</div>
+
+		</div>
+
+
+
+	</body>
+</html>			

@@ -1,0 +1,175 @@
+			@import url(http://weloveiconfonts.com/api/?family=entypo);
+			/* entypo */
+			[class*="entypo-"]:before {
+	 			font-family: 'entypo', sans-serif;
+ 		 		
+			}
+
+			body{
+				font-family: "Montserrat",arial,serif;
+			}
+			body{
+				color: #3a3a3a;
+				font-size: 12px;
+				line-height: 1.55;
+				letter-spacing: 1.22px;
+			}
+
+
+			strong{
+				font-weight: 700;
+			}
+
+			img{
+				max-width: 100%;
+				height: auto;
+				border:1px solid #e6e6e6;
+			}
+
+			a{
+				color: #5d83de;
+				text-decoration: none;
+				transition:0.3s;
+			}
+
+			a:hover{
+				color: #3343d2;
+				transition:0.3s;
+			}
+
+			i{
+				font-style: normal;
+			}
+
+			.wrapper{
+				top:0px;
+				margin-top:-16px;
+				margin-left:-10px;
+				margin-right:-10px;
+
+			}
+
+			
+
+			
+
+			/*******body******/
+			.body{
+				margin-top: 100px;
+				width:1200px;
+				
+				float:left;
+			}
+
+			.body-wrapper{
+				margin:0 auto;
+				width:1200px;
+
+			}
+
+			.body .page-title{
+				text-align: center;
+				padding: 0 15px;
+
+			}
+
+			.page-title h1{
+				font-size: 38px;
+				font-weight: 600;
+				line-height: 1.1;
+			}
+
+			.page-title p{
+				padding: 5px 0 15px;
+				margin: 0;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: bold;
+			}
+
+			.body .form-box{
+				max-width: 440px;
+				margin: 0 auto;
+			}
+
+			.form-box .content{
+				margin: 0;
+				padding: 25px 25px 25px;
+				background: none repeat scroll 0 0 #f2f2f2;
+				border: none;
+				overflow: hidden;
+			}
+
+			.content ul{
+				list-style: none outside none;
+				padding:0;
+				padding-left:9px;
+				margin:0;
+			}
+
+			.content ul li{
+				list-style: none;
+
+			}
+			
+			.content label{
+				display: inline-block;
+				max-width: 100%;
+				margin-bottom: 5px;
+				font-weight: bold;
+				margin-top:10px;
+
+			}
+
+			.content .input-full{
+				border: 1px solid #e5e5e5;
+				border-radius: 2px 2px 2px 2px;
+				box-shadow: 0 0 5px 0 #eaeaea inset;
+				padding: 4px 9px;
+				width: 93%;
+				margin-bottom: 5px;
+				line-height: 30px;
+				max-width: 93%;
+			}
+
+			.body .buttons-set{
+				text-align: center;
+				background-color: #ececec;
+				padding: 15px 25px;
+			}
+
+			.body .buttons-set .btn-button{
+				margin: 0 0 10px;
+				text-transform: uppercase;
+				cursor: pointer;
+				background-color: #15a63a;
+				color: #fff;
+				border: solid 2px #369844;
+				display: inline-block;
+				font-size: 12px;
+				line-height: 20px;
+				height: auto !important;
+				padding: 14px 26px;
+				font-weight: bold;
+				position: static;
+				overflow: hidden;
+				outline: none;
+				text-shadow: none;
+				text-decoration: none;
+				vertical-align: middle;
+				letter-spacing: 1px;
+				max-width: 100%;
+				transition:0.15s;
+			}
+
+			.body .buttons-set .btn-button:hover{
+				transition:0.15s;
+				background-color: #17ce41;
+				border: solid 2px #17ce41;
+				color: #fff;
+			}
+
+			.buttons-set p{
+				line-height: 24px;
+				font-weight: bold;
+			}

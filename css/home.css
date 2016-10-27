@@ -1,0 +1,325 @@
+
+			@import url(http://weloveiconfonts.com/api/?family=entypo);
+			/* entypo */
+			[class*="entypo-"]:before {
+	 			font-family: 'entypo', sans-serif;
+ 		 		
+			}
+
+			body{
+				font-family: "Montserrat",arial,serif;
+			}
+			body{
+				color: #3a3a3a;
+				font-size: 12px;
+				line-height: 1.55;
+				letter-spacing: 1.22px;
+			}
+
+
+			strong{
+				font-weight: 700;
+			}
+
+			img{
+				max-width: 100%;
+				height: auto;
+				border:1px solid #e6e6e6;
+			}
+
+			a{
+				color: #5d83de;
+				text-decoration: none;
+				transition:0.3s;
+			}
+
+			a:hover{
+				color: #3343d2;
+				transition:0.3s;
+			}
+
+			i{
+				font-style: normal;
+			}
+
+			.wrapper{
+				top:0px;
+				margin-top:-16px;
+				margin-left:-10px;
+				margin-right:-10px;
+
+			}
+
+
+			/*******body******/
+			.body{
+				margin-top: 0px;
+				width:1200px;
+				
+				float:left;
+				z-index: 7;
+			}
+
+			.body-wrapper{
+				margin:0 auto;
+				width:1200px;
+				z-index: 7;
+
+			}
+			.search-container{
+				line-height: 70px;
+				border: none;
+				color: #333333;
+				padding:0;
+				box-shadow: none;
+				float:left;
+				width:1000px;
+				margin-left:100px;
+				margin-right:100px;
+				margin-bottom: 20px;
+				margin-top: -40px;
+				z-index: 8;
+
+			}
+
+			.input-text{
+				width:840px;
+				height: 36px;
+				float:left;
+				padding: 17px 42px;
+				font-size: 18px;
+				border:1px solid #e6e6e6;
+				box-shadow: none;
+				border-right:0;
+				z-index: 8;
+			}
+
+
+
+			.body button.entypo-search{
+				width:72px;
+				height:71.5px;
+				float:left;
+				padding: 16px 22px;
+				margin-left:-2px;
+
+				background: white;
+				color: #3a3a3a;
+				font-size:20px;
+				border:1px solid #e6e6e6;
+				box-shadow: none;
+				cursor: pointer;
+				margin-top:0px;
+
+			}
+
+			.news-bar{
+
+				width:100%;
+				height:auto;
+				
+				float:left;
+				margin-top:69px;
+				z-index: 1;
+
+				
+			}
+
+			.news-image{
+				width:100%;
+				height: auto;
+				max-height: 700px;
+				z-index: 2;
+				background-size: cover;
+				
+			}
+			.news-image img{
+				z-index: 3;
+			}
+
+			.news-overlay{
+				width:100%;
+				height: 700px;
+				position: absolute;
+				z-index: 5;
+				top:62px;
+				overflow: hidden;
+				
+			}
+
+			/*.overlay-background{
+				width:100%;
+				height:100%;
+				top:0;
+				background: rgba(0,0,0,0.7);
+				z-index: 10;
+				
+			}
+
+			.overlay-background:hover{
+				width:100%;
+				height:100%;
+				top:0;
+				background: rgba(0,0,0,0.7);
+				
+			}*/
+
+			.news-text{
+				float:left;
+				width:100%;
+				height:100px;
+				text-align: left;
+				font-size: 18px;
+				position: absolute;
+				z-index: 5;
+				margin:8% 3%;
+				padding:30px 0;
+				color:#fff;
+				
+				font-weight: bolder;
+
+				background: rgba(0,0,0,0);
+				
+				
+				transition: 1.5s;
+				overflow: hidden;
+				opacity:0.1;
+				
+			}
+
+
+			.news-text:hover{
+				
+				
+				transition: 1s;
+				opacity: 1;
+			}
+
+
+			
+
+			.news-title{
+				font-size: 34px;
+				letter-spacing: 5px;
+				line-height: 60px;
+				text-transform: uppercase;
+			}
+
+			.news-content{
+				line-height: 26px;
+				font-style: italic;
+				font-size: 22px;
+				font-family: 'Crimson Text', serif;
+				font-weight: 600;
+			}
+
+			.news-content a{
+				color:#fff;
+				border-bottom: 2px solid #ffffff;
+			}
+
+			.home-banner{
+				width: 1200px;
+				display: block;
+				overflow: hidden;
+				margin-top: 40px;
+				margin-left: 0px;
+				float:left;
+			}
+
+			.banner-container{
+				position: relative;
+				width:600px;
+				height:420px;
+				float:left;
+				overflow: hidden;
+				transition: 0.5s;
+			}
+			
+			.banner-container:hover .banner-image img{
+				transition:0.5s;
+				transform:scale(1.05,1.05);
+				
+			}
+			.banner-container:hover .overlay{
+				transition:0.5s;
+				opacity:1;
+				visibility: visible;
+			}
+
+			.overlay span:hover{
+				transition: 0.3s;
+				background:rgba(0,0,0,0.8);
+			}
+
+			.overlay span{
+				transition: 0.3s;
+			}
+
+			.banner-image{
+				position: relative;
+				width:580px;
+				height: 400px;
+				
+				float:left;
+				margin:10px 10px;
+				overflow: hidden;
+				vertical-align: center;
+			}
+
+
+
+			.banner-image span{
+				position: absolute;
+				left: 40px;
+				top: 28px;
+				font-size: 28px;
+				font-weight: 600;
+				letter-spacing: 0.2em;
+				color: #333333;
+				text-transform: uppercase;
+				z-index: 9;
+			}
+
+
+			.overlay{
+				z-index: 9;
+				position: absolute;
+				border: 2px solid #fff;
+				width:540px;
+				height:360px;
+				left:28px;
+				top:28px;
+				opacity: 0;
+				visibility: hidden;
+				transition: 0.3s;
+			}
+
+
+
+			
+
+
+
+
+			.banner-container .widget-category-link{
+				text-align: left;
+				position: absolute;
+				bottom: -2px;
+				right: -2px;
+			}
+
+			.banner-container .widget-category-link a{
+				margin-left: 0;
+				padding-right: 0;
+				width: 45px;
+				height: 45px;
+				display: block;
+				position: relative;
+				color: #fff;
+				font-size: 24px;
+				text-align: center;
+				line-height: 45px;
+				border: 2px solid #FFFFFF;
+			}
+
