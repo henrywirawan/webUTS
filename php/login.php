@@ -1,13 +1,6 @@
 <?php
 session_start();
-?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<?php
+
 require_once("db.php");
 $conn = konek_db();
 
@@ -48,5 +41,3 @@ if (isset($_POST["username"]) && isset($_POST["password"])){
 
 ?>
 
-</body>
-</html>

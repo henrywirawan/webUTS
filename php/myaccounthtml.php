@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-	<link rel="stylesheet" href="../css/body-form.css">
+	<link rel="stylesheet" href="../css/myaccount.css">
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/footer.css">
 	<head>
 		<title>Keeper | Account</title>
-
+		<style>
+			
+		</style>
 	</head>
 
 	<body>
@@ -19,9 +21,9 @@
 					</div>
 					<div class="left-menu">
 						<ul>
-							<li class=li-home><a href="home.html">Home<span class="underline"></span></a></li>
-							<li class=li-shop><a href="shop.html">Shop<span class="underline"></span></a></li>
-							<li class=li-about><a href="about.html">About<span class="underline"></span></a></li>
+							<li class=li-home><a href="../php/home.php">Home<span class="underline"></span></a></li>
+							<li class=li-shop><a href="../html/shop.html">Shop<span class="underline"></span></a></li>
+							<li class=li-about><a href="../html/about.html">About<span class="underline"></span></a></li>
 						</ul>
 					</div>
 					<div class="right-menu">
@@ -70,15 +72,12 @@
 							<li class="inline li-search"><span class="entypo-search span-inline"></span>
 								<div class="switcher-content-search">
 									<div class="switcher-content">
-
-
-											<div class="input-group form-search"> 
-												<input value="" placeholder="Search our store" class="input-group-field" type="search">
-												<button type="submit" class="btn-button"> 
-													<span><span><i class="entypo-search"></i></span></span> 
-												</button>
-											</div>
-										
+										<div class="input-group form-search"> 
+											<input value="" placeholder="Search our store" class="input-group-field" type="search">
+											<button type="submit" class="btn-button"> 
+												<span><span><i class="entypo-search"></i></span></span> 
+											</button>
+										</div>
 									</div>
 								</div>
 							</li>
@@ -91,40 +90,48 @@
 			<div class="body-wrapper">
 				<div class="body">
 					<div class="page-title">
-						<h1>My Account Data</h1>
-						<p>You can change your both your password and email here.</p>
+						<h1>My Account Setting</h1>
+						<p>Setting your account to get better experience!</p>
 					</div>
 
-					<form class="form-box" method="post" action="../php/editaccount.php" enctype="multipart/form-data">
+					<form class="form-box" method="post" enctype="multipart/form-data">
 						<div class="content">
-							<ul class="form-list">
-								<li>
-									<label class="hidden-label">Your Email Now</label>
-									<input name="oldemail" id="Email" class="input-full" placeholder="Old Email" autocorrect="off" autocapitalize="off" type="email">
-								</li>
-								<li>
-									<label class="hidden-label">New Email</label>
-									<input name="newemail" id="Email" class="input-full" placeholder="New Email" autocorrect="off" autocapitalize="off" type="email">
-								</li>
-								
-								
-								
-							</ul>
+							<p>What are you going to do?</p>
+							<a href="../php/changepass.php">
+								<button type="button" value="" class="btn-button uppercase">Change My Password</button>
+							</a>
+							<a href="../php/changeemailhtml.php">
+								<button type="button" value="" class="btn-button uppercase">Change My Email</button>
+							</a>
 
 
 						</div>
 
 						<div class="buttons-set">
 							
-							<input type="submit" value="Submit" class="btn-button uppercase">
-							
-							<p>Don't use this account anymore? You can<a href="../php/deleteaccount.php">Delete your account</a></p>
+							<p>Don't use this account anymore?</p>
+							<a>
+								<button type="button" value="" class="btn-button uppercase" onclick="deleteaccount()">Delete My Account</button>
+							</a>
 						</div>
 					</form>
 				</div>
 			</div>
-
+			<div class="footer-copyright">
+				<span class="text-copyright">Copyright &copy 2016 Henry. All rights reserved.</span>
+			</div>
 		</div>
 	</body>
 </html>
 
+<script>
+function deleteaccount() {
+    var r = confirm("Deleted account cannot be restored. Are you sure you want to delete this account?");
+    if (r == true) {
+        window.location.href = '../php/deleteaccount.php';
+    } else {
+        window.location.href = '../php/myaccounthtml.php';
+    }
+    
+}
+</script>
