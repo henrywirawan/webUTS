@@ -1,3 +1,18 @@
+<?php
+session_start();
+require_once("db.php");
+$conn = konek_db();
+
+if (! isset($_SESSION["username"])){
+	header("Location: ../php/login.php");
+}else{
+	$username = $_SESSION["username"];
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 	<link rel="stylesheet" href="../css/body-form.css">
@@ -15,13 +30,13 @@
 			<div class="header">
 				<div class="navbar1">
 					<div class="logo-container">
-						<a href="home.html"><img src="images/logo.png" alt="logo"></a>
+						<a href="home.html"><img src="../images/logo.png" alt="logo"></a>
 					</div>
 					<div class="left-menu">
 						<ul>
-							<li class=li-home><a href="home.html">Home<span class="underline"></span></a></li>
-							<li class=li-shop><a href="shop.html">Shop<span class="underline"></span></a></li>
-							<li class=li-about><a href="about.html">About<span class="underline"></span></a></li>
+							<li class=li-home><a href="../php/home.php">Home<span class="underline"></span></a></li>
+							<li class=li-shop><a href="../php/mykeep.php">My Keep<span class="underline"></span></a></li>
+							<li class=li-about><a href="../html/about.html">About<span class="underline"></span></a></li>
 						</ul>
 					</div>
 					<div class="right-menu">
@@ -31,57 +46,25 @@
 									<div class="switcher-content">
 										<ul class="links">
 											<li>
-												<a href="login.html">Sign In</a>
+												<a href="../php/login.php">Sign In</a>
 											</li>
 											<li>
-												<a href="create account.html">Create an Account</a>
+												<a href="../php/signup.php">Create An Account</a>
+											</li>
+											<li>
+												<a href="../php/myaccounthtml.php">My Keep Account</a>
+											</li>
+											
+											<li>
+												<a href="../php/logout.php">Logout</a>
 											</li>
 										
 										</ul>
-										<div class="block-currency">
-											<div class="title-selector">
-												<span>Currency</span>
-											</div>
-											<div class="block-content">
-												<ul class="setting-currency">
-													<li class=""><a href="#">IDR</a></li>
-													<li class="selected"><a href="#">USD</a></li>
-												</ul> 
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="inline li-basket"><span class="entypo-basket span-inline"></a>
-								<div class="switcher-content-basket">
-									<div class="switcher-content">
-										<div class="cart-checkout">
-											<a href="shopping cart.html" class="btn-button view-cart">
-												<span>View Cart</span>
-											</a>
-											<a href="checkout.html" class="btn-button checkout-cart">
-												<span>Checkout</span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li class="inline li-search"><span class="entypo-search span-inline"></span>
-								<div class="switcher-content-search">
-									<div class="switcher-content">
-
-
-											<div class="input-group form-search"> 
-												<input value="" placeholder="Search our store" class="input-group-field" type="search">
-												<button type="submit" class="btn-button"> 
-													<span><span><i class="entypo-search"></i></span></span> 
-												</button>
-											</div>
 										
 									</div>
 								</div>
 							</li>
+							
 						</ul>
 					</div>
 					

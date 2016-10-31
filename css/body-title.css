@@ -1,0 +1,22 @@
+.body-title-text{
+	float:left;
+	
+}
+
+.body-title-text h2{
+	font-size: 16px;
+	margin-left:150px;
+}
+
+.body-title-text h2 span{
+	padding-left:20px;
+}
+
+.body-title{
+	width:100%;
+	float:left;
+	margin-top:70px;
+	padding:8px 0;
+	background:rgba(0,0,0,0.4);
+	background-color: #f3f3f3;
+}
