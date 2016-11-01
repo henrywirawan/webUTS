@@ -31,6 +31,7 @@ if (isset($_POST["idKeepData"]) &&
 
 		$rows = $query->get_result();
 
+		//mengecek apakah id sudah pernah digunakan
 		if ($rows->num_rows == 0){
 			$query = $conn->prepare("select * from tbuserkeepdata where username=? or url=?");
 			$query->bind_param("ss", $username, $email);

@@ -1,1 +1,2 @@
-untuk cek email dan username apakah sudah terdaftar gunakan button "Check" saja jadi database cuma perlu taro username sbg PK
+adddata.php
+error: line 67

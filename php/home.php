@@ -70,20 +70,24 @@ if (! isset($_SESSION["username"])){
 			<div class="news-bar">
 				<div class="overlay-background">
 					
-				<div class="news-image">
-					<a><img src="../images/intro-bg copy.jpg" alt="berita"></a>
-				</div>
-
-				<div class="news-overlay">
-					
-
-					<div class="news-text">
-						<span class="news-title">Don't Get Hacked. Get Keeper.</span><br>
-						<span class="news-content">
-							<?php echo $newscontent ?>
-						</span>
+					<div class="news-image">
+						<a><img src="../images/intro-bg copy.jpg" alt="berita"></a>
 					</div>
-				</div>
+
+					<div class="news-overlay">
+						
+
+						<div class="news-text">
+							<span class="news-title">Keep password safely. Get Keep!</span><br>
+							<span class="news-content">
+								<?php echo $newscontent ?>
+							</span>
+
+						</div>
+						<!-- <div class="subimage">
+							<img src="../images/cyborg.png">
+						</div> -->
+					</div>
 				</div>
 			</div>
 			<div class="body-wrapper">

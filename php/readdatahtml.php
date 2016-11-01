@@ -93,8 +93,8 @@ if (! isset($_SESSION["username"])){
 							</tr>
 						<?php
 						while ($row = $rows->fetch_array()){
-							$url_edit = "edit.php?idKeepData=" . $row['idKeepData'];
-							$url_delete = "delete.php?idKeepData=" . $row['idKeepData'];
+							$url_edit = "editdatahtml.php?idKeepData=" . $row['idKeepData'];
+							$url_delete = "deletedata.php?idKeepData=" . $row['idKeepData'];
 
 							echo "<tr>";
 							echo "<td>" . $row['username'] . "</td>";
@@ -103,10 +103,13 @@ if (! isset($_SESSION["username"])){
 							echo "<td>" . $row['description'] . "</td>";
 							echo "
 								<td>
-									<a class='entypo-pencil btn-mini' href='" . $url_edit . "'></a> 
-									<a class='entypo-trash btn-mini' href='" . $url_delete . "'></a>
-								</td>";
+									<a class='entypo-pencil btn-mini' href='" . $url_edit . "'></a>";
+									?>
+									<a class='entypo-trash btn-mini' onclick='deletedata("<?php echo $url_delete; ?>")'></a>
+									<?php
+							echo "</td>";
 							echo "</tr>";
+
 						}
 
 						?>
@@ -127,3 +130,14 @@ if (! isset($_SESSION["username"])){
 
 	</body>
 </html>
+
+<script>
+function deletedata(urldel) {
+    var r = confirm("Are you sure you want to delete this data?");
+    if (r == true) {
+        window.location.href = urldel;
+    } else {
+        window.location.href = '../php/readdatahtml.php';
+    }
+}
+</script>
