@@ -14,7 +14,12 @@ if (! isset($_SESSION["username"])){
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/footer.css">
 	<head>
-		<title>Keep | Account</title>
+		<title>Keep | My Keep</title>
+		<style>
+			.entypo-trash{
+				cursor:pointer;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="wrapper">
