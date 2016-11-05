@@ -64,33 +64,35 @@ if (isset($_POST["idKeepData"]) &&
 				}
 			}else{
 ?>
-<!-- 				<script type='text/javascript'> //kenapa bagian ini tidak tereksekusi dengan baik: Error
-					var r = confirm("You have ever registered the same both username and url before. Do you want to continue?");
-				    if (r == true) {
-<?php
-				        $query = $conn->prepare("insert into tbuserkeepdata values(?, ?, ?, ?, ?, ?)");
-						$query->bind_param("isssss", $idKeepData, $keepUsername ,$username, $password, $url, $description);
-						$result = $query->execute();
-					    if (! $result){
-					        die("<p>fail insert datat</p>");
-						}else{
-?>
-							var r = confirm("Success added data. Do you want to add another data?");
-						    if (r == true) {
-						    	window.location.href = '../php/adddatahtml.php';
-						    }else{
-						        window.location.href = '../php/readdatahtml.php';
-						    }
+				<script type='text/javascript'> //kenapa bagian ini tidak tereksekusi dengan baik: Error
+					alert("You can't register the same both username and url more than once.");
+					window.location.href = '../php/adddatahtml.php';
+// 					var r = confirm("You have ever registered the same both username and url before. Do you want to continue?");
+// 				    if (r == true) {
+// <?php
+// 				        $query = $conn->prepare("insert into tbuserkeepdata values(?, ?, ?, ?, ?, ?)");
+// 						$query->bind_param("isssss", $idKeepData, $keepUsername ,$username, $password, $url, $description);
+// 						$result = $query->execute();
+// 					    if (! $result){
+// 					        die("<p>fail insert datat</p>");
+// 						}else{
+// ?>
+// 							var r = confirm("Success added data. Do you want to add another data?");
+// 						    if (r == true) {
+// 						    	window.location.href = '../php/adddatahtml.php';
+// 						    }else{
+// 						        window.location.href = '../php/readdatahtml.php';
+// 						    }
 		
-<?php
-						}
-?>
-					}else{
-						echo "<script>window.location.href = '../php/adddatahtml.php'</script>";
-					}
-
-				</script> -->
+// <?php
+// 						}
+// ?>
+// 					}else{
+// 						echo "<script>window.location.href = '../php/adddatahtml.php'";
+// 					}
 				
+				</script>
+
 <?php
 			}
 

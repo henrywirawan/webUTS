@@ -2,6 +2,7 @@
 session_start();
 
 require_once("db.php");
+require_once "../twig.php";
 $conn = konek_db();
 
 
@@ -31,6 +32,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])){
 		$_SESSION["username"]=$username;
 		//ridirect ke homepage
 		header("Location: ../php/home.php");
+
 
 	}else{
 		echo "<script type='text/javascript'>alert('Invalid Username or Password')</script>";

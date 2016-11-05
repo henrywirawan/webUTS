@@ -122,7 +122,7 @@
 				padding: 20px;
 				text-align: left;
 				margin: 0;
-				width: 275px;
+				width: 230px;
 				overflow: hidden;
 				font-size: 12px;
 				line-height: 25px;
@@ -173,115 +173,6 @@
 				visibility: visible;
 			}
 
-			.cart-checkout{
-			    margin: 0 0 0 0;
-				padding: 8px 10px 10px;
-				text-align: right;
-				border: 0;
-				float: left;
-				width: 100%;
-
-			}
-
-			.cart-checkout a{
-				float:left;
-				text-decoration: none;
-				margin: 0 0 0 16px;
-				padding: 6px 14px;
-				text-align: center;
-				font-size: 12px;
-				color: #fff;
-				background-color: #15a63a;
-				border: solid 2px #369844;
-				font-weight: bold;
-				position: relative;
-				overflow: hidden;
-				outline: none;
-				text-shadow: none;
-				vertical-align: middle;
-				letter-spacing: 1px;
-				max-width: 100%;
-				transition:0.2s;
-			}
-
-			
-
-			.cart-checkout a:hover{
-				transition:0.2s;
-				background-color: #17ce41;
-				color: #fff;
-				border: solid 2px #17ce41;
-			}
-
-			.switcher-content-search{
-				top: 80px;
-				right: 132px;
-				position: absolute;	
-				opacity: 0;
-				visibility: hidden;
-				transition:0.3s;
-			}
-
-			.right-menu .li-search:hover .switcher-content-search{
-				opacity: 1;
-				transition: 0.3s;
-				top:70px;
-				visibility:visible;
-			}
-
-			.switcher-content-search .form-search{
-								
-				width: 280px;
-				font-size: 18px;
-				color: #181818;
-				float:left;
-			}
-
-			.switcher-content-search input.input-group-field{
-				border-top: 0;
-				border-left: 0;
-				border-right: 0;
-				width: 235px;
-				line-height: 25px;
-				float: left;
-				font-size: 14px;
-				box-sizing: border-box;
-				border-bottom: 1px solid #e5e5e5;
-				padding: 8px 10px;
-				border-collapse: separate;
-				float:left;
-
-			}
-
-			.switcher-content-search .btn-button{
-				
-				box-shadow: none;
-				border: none;
-				padding: 10px 14px;
-				background-color: #15a63a;
-				color: #fff;
-				font-size: 14px;
-				line-height: 20px;
-				height: 42px;
-				width:42px;
-				font-weight: bold;
-				
-				outline: none;
-				text-shadow: none;
-				text-decoration: none;
-				vertical-align: middle;
-				letter-spacing: 1px;
-				cursor: pointer;
-				text-transform: none;
-				float:left;
-			}
-
-			.switcher-content-search .btn-button:hover{
-				transition:0.2s;
-				background-color: #17ce41;
-				color: #fff;
-				
-			}
 
 			
 

@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if (! isset($_SESSION["username"])){
 	header("Location: login.php");
 }else{
@@ -54,13 +55,10 @@ if (! isset($_SESSION["username"])){
 											<li>
 												<a href="../php/logout.php">Logout</a>
 											</li>
-										
 										</ul>
-										
 									</div>
 								</div>
 							</li>
-							
 						</ul>
 					</div>
 					
@@ -90,11 +88,12 @@ if (! isset($_SESSION["username"])){
 
 						?>
 						<table>
-							<tr>
-								<th>Username</th>
-								<th>Password</th>
-								<th>Web URL</th>
-								<th>Description</th>
+							<tr class=tr-th>
+								<th class='th-data'><span>Username</span></th>
+								<th class='th-data'><span>Password</span></th>
+								<th class='th-data'><span>Web URL</span></th>
+								<th class='th-data'><span>Description</span></th>
+								<th class='th-action'><span>Action</span></th>
 							</tr>
 						<?php
 						while ($row = $rows->fetch_array()){
@@ -102,12 +101,17 @@ if (! isset($_SESSION["username"])){
 							$url_delete = "deletedata.php?idKeepData=" . $row['idKeepData'];
 
 							echo "<tr>";
-							echo "<td>" . $row['username'] . "</td>";
-							echo "<td>" . $row['password'] . "</td>";
-							echo "<td>" . $row['url'] . "</td>";
-							echo "<td>" . $row['description'] . "</td>";
+							echo "<td class='td-data'><span>" . $row['username'] . "</span></td>";
+							?>
+								<td class='td-data spnpass' onmouseover="this.style.filter='blur(0px)'" onmouseout="this.style.filter='blur(2px)'">
+									<span>
+									<?php echo $row['password'] ?></span>
+								</td>
+							<?php
+							echo "<td class='td-data'><span>" . $row['url'] . "</span></td>";
+							echo "<td class='td-data'><span>" . $row['description'] . "</span></td>";
 							echo "
-								<td>
+								<td class='td-action'>
 									<a class='entypo-pencil btn-mini' href='" . $url_edit . "'></a>";
 									?>
 									<a class='entypo-trash btn-mini' onclick='deletedata("<?php echo $url_delete; ?>")'></a>

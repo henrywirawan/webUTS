@@ -142,6 +142,7 @@
 
 			table .entypo-trash{
 				color: #823939;
+
 			}
 
 			table .entypo-trash:hover{
@@ -150,11 +151,51 @@
 
 			table .entypo-pencil{
 				color: #4653c9;
+				
 			}
 
 			table .entypo-pencil:hover{
 				color: #6877ff;
 			}
+
+			table{
+				border-collapse: collapse;
+			}
+
+			.th-action{
+				background: #afd8b2;
+				border: 1px solid #cccccc;
+				
+			}
+
+			.td-action{
+				text-align: center;
+				border: 1px solid #cccccc;
+			}
+
+			.spnpass{
+				filter: blur(2.5px);
+			}
+
+			.td-data{
+				border: 1px solid #cccccc;
+				
+				padding-left: 4px;
+			}
+
+
+
+			.th-data{
+				background: #e0e0e0;
+				border-bottom: 2px solid #dddddd;
+				border-top: 2px solid #dddddd;
+				 
+			}
+
+			.td-data span{
+				margin: 4px 10px;
+			}
+
 
 
 			.btn-add{

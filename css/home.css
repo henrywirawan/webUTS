@@ -66,52 +66,7 @@
 				z-index: 7;
 
 			}
-			.search-container{
-				line-height: 70px;
-				border: none;
-				color: #333333;
-				padding:0;
-				box-shadow: none;
-				float:left;
-				width:1000px;
-				margin-left:100px;
-				margin-right:100px;
-				margin-bottom: 20px;
-				margin-top: -40px;
-				z-index: 8;
 
-			}
-
-			.input-text{
-				width:840px;
-				height: 36px;
-				float:left;
-				padding: 17px 42px;
-				font-size: 18px;
-				border:1px solid #e6e6e6;
-				box-shadow: none;
-				border-right:0;
-				z-index: 8;
-			}
-
-
-
-			.body button.entypo-search{
-				width:72px;
-				height:71.5px;
-				float:left;
-				padding: 16px 22px;
-				margin-left:-2px;
-
-				background: white;
-				color: #3a3a3a;
-				font-size:20px;
-				border:1px solid #e6e6e6;
-				box-shadow: none;
-				cursor: pointer;
-				margin-top:0px;
-
-			}
 
 			.news-bar{
 
@@ -221,11 +176,19 @@
 				transition: 0.5s;
 			}
 			
+			.banner-image img{
+				filter: blur(0px);
+				transition: 0.3s;
+			}
+
 			.banner-container:hover .banner-image img{
 				transition:0.5s;
 				transform:scale(1.05,1.05);
+				filter: blur(4px);
 				
 			}
+
+
 			.banner-container:hover .overlay{
 				transition:0.5s;
 				opacity:1;
@@ -245,7 +208,7 @@
 				position: relative;
 				width:580px;
 				height: 400px;
-				
+
 				float:left;
 				margin:10px 10px;
 				overflow: hidden;
@@ -270,7 +233,7 @@
 			.overlay{
 				z-index: 9;
 				position: absolute;
-				border: 2px solid #ffff82;
+				border: 2px solid #eee;
 				width:540px;
 				height:360px;
 				left:28px;
@@ -300,7 +263,7 @@
 				font-size: 24px;
 				text-align: center;
 				line-height: 45px;
-				border: 2px solid #ffff82;
+				border: 2px solid #eee;
 			}
 
 			
