@@ -20,7 +20,7 @@
 			<div class="news-text">
 				<span class="news-title">Keep password safely. Get Keep!</span><br>
 				<span class="news-content">
-					{% if username == null %}
+					{% if keepusername == null %}
 						<a href='../php/signup.php'>Sign Up Free</a>
 					{% endif %}
 				</span>
@@ -59,7 +59,7 @@
 					</div>
 					<div class="overlay">
 						<span class="widget widget-category-link">
-							<a href="../html/about.html" class="entypo-right-thin"></a>
+							<a href="../php/about.php" class="entypo-right-thin"></a>
 						</span>
 					</div>
 				</div>

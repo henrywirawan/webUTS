@@ -29,6 +29,6 @@ $result = $query->execute(); //true jika eksekusi $querynya berhasil, false jika
 if (! $result)
 	die("Delete data Failed");
 else
-	header("Location: readdatahtml.php");
+	header("Location: readdata.php");
 
 ?>

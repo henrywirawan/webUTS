@@ -70,7 +70,7 @@ if (isset($_POST["newemail"]) &&
 
 
 }else{
-	header("Location: ../php/changeemailhtml.php");
+	header("Location: ../php/changeemailview.php");
 
 }
 

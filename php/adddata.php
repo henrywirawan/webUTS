@@ -1,9 +1,13 @@
 <?php
 session_start();
+
+require_once "../twig.php";
+
 if (! isset($_SESSION["username"])){
 	header("Location: login.php");
 }else{
 	$keepUsername = $_SESSION["username"];
+	$idKeepData = time();
 }
 
 require_once("db.php");
@@ -53,9 +57,9 @@ if (isset($_POST["idKeepData"]) &&
 					<script type='text/javascript'>
 						var r = confirm("Success added data. Do you want to add another data?");
 					    if (r == true) {
-					    	window.location.href = '../php/adddatahtml.php';
+					    	window.location.href = '../php/adddataview.php';
 					    } else {
-					        window.location.href = '../php/readdatahtml.php';
+					        window.location.href = '../php/readdata.php';
 					    }
 
 					</script>;
@@ -66,7 +70,7 @@ if (isset($_POST["idKeepData"]) &&
 ?>
 				<script type='text/javascript'> //kenapa bagian ini tidak tereksekusi dengan baik: Error
 					alert("You can't register the same both username and url more than once.");
-					window.location.href = '../php/adddatahtml.php';
+					window.location.href = '../php/adddataview.php';
 // 					var r = confirm("You have ever registered the same both username and url before. Do you want to continue?");
 // 				    if (r == true) {
 // <?php
@@ -99,15 +103,15 @@ if (isset($_POST["idKeepData"]) &&
 
 		}else{
 			echo "<script type='text/javascript'>alert('Keep Data ID has been used!')</script>";
-			echo "<script>window.location.href = '../php/adddatahtml.php'</script>";
+			echo "<script>window.location.href = '../php/adddataview.php'</script>";
 		}
 	}else{
 		echo "<script type='text/javascript'>alert('Username, Password and URL Field must be filled!')</script>";
-		echo "<script>window.location.href = '../php/adddatahtml.php'</script>";
+		echo "<script>window.location.href = '../php/adddataview.php'</script>";
 	}
 
 }else{
-	header("Location: adddatahtml.php");
+	header("Location: adddataview.php");
 
 }
 

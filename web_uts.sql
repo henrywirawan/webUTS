@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2016 at 07:41 AM
+-- Generation Time: Nov 05, 2016 at 07:28 PM
 -- Server version: 5.5.24
 -- PHP Version: 7.0.3
 
@@ -36,10 +36,8 @@ CREATE TABLE `tblogin` (
 --
 
 INSERT INTO `tblogin` (`username`, `password`) VALUES
-('anto', '1d994afbbe98dfde06bbac24558ce49b798f2835'),
-('henry', '293adf1768cf33c0281bf626854672796d6f8bc3'),
-('budi12345', '5d373a0ed0c16806d5771e8dda3c79ad98c24b93'),
-('andi', '81f27f2687e3bc0a43d52b09c30deeb98e83cdf3');
+('henry', '3fb25978d4a6cbd4eaf626a889f92e01ee63eb18'),
+('ayong', '7fc495a6660cad3467394b1741cf84ede83aa559');
 
 -- --------------------------------------------------------
 
@@ -61,12 +59,10 @@ CREATE TABLE `tbuserdata` (
 --
 
 INSERT INTO `tbuserdata` (`username`, `firstName`, `lastName`, `password`, `email`, `status`) VALUES
-('andi', 'andi', 'andi', '81f27f2687e3bc0a43d52b09c30deeb98e83cdf3', 'andi@andi', 'approved'),
-('angeline', 'angeline', 'abcd', 'abcd', 'angeline@ymail.com', 'pending'),
+('abcde', 'sadfsfsf', 'sadfasd', '61d6504733ca7757e259c644acd085c4dd471019', 'abcde@ab', 'deactivated'),
 ('anto', 'anto', 'anto', '1d994afbbe98dfde06bbac24558ce49b798f2835', 'anto@anto', 'approved'),
-('budi', 'budi', 'budi', 'budi', 'budi@budi', 'pending'),
-('budi12345', 'budi', 'santo', '5d373a0ed0c16806d5771e8dda3c79ad98c24b93', 'budi@bbd', 'approved'),
-('henry', 'henry', 'wirawan', '293adf1768cf33c0281bf626854672796d6f8bc3', 'henry@gmail.com', 'approved');
+('ayong', 'ayong', 'dayong', '7fc495a6660cad3467394b1741cf84ede83aa559', 'ayong@dayong', 'approved'),
+('henry', 'henry', 'wirawan', '3fb25978d4a6cbd4eaf626a889f92e01ee63eb18', 'henry@az.com', 'approved');
 
 -- --------------------------------------------------------
 
@@ -88,10 +84,10 @@ CREATE TABLE `tbuserkeepdata` (
 --
 
 INSERT INTO `tbuserkeepdata` (`idKeepData`, `keepUsername`, `username`, `password`, `url`, `description`) VALUES
-(1477975426, 'henry', 'a', 'a', 'a', 'a'),
-(1477975440, 'henry', 'asdf', 'as', 'as', 'as'),
-(1477975434, 'henry', 'b', 'b', 'b', ''),
-(1477976409, 'budi12345', 'budi', 'budiinsta', 'insta.com', 'abcd');
+(1478335431, 'henry', 'b', 'b', 'b', 'b'),
+(1477976409, 'budi12345', 'budi', 'budiinsta', 'insta.com', 'abcd'),
+(1478335438, 'henry', 'c', 'v', 'v', 'v'),
+(1478331352, 'henry', 'henry', 'asdf', 'adsfsadfsf', 'sadf');
 
 --
 -- Indexes for dumped tables

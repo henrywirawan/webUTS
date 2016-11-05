@@ -55,21 +55,21 @@ if (isset($_POST["username"]) &&
 		        die("<p>fail on query update data</p>");
 		    else{
 		    	echo "<script type='text/javascript'>alert('Your data has been updated.')</script>";
-				echo "<script>window.location.href = '../php/readdatahtml.php'</script>";
+				echo "<script>window.location.href = '../php/readdata.php'</script>";
 		    }
 
 		}else{
 			echo "<script type='text/javascript'>alert('Invalid ID Keep Data and Keep Username. Please contact web developer!')</script>";
-			echo "<script>window.location.href = '../php/readdatahtml.php'</script>";
+			echo "<script>window.location.href = '../php/readdata.php'</script>";
 		}
 
 	}else{
 		echo "<script type='text/javascript'>alert('Username, Password and URL Field must be filled!')</script>";
-		echo "<script>window.location.href = '../php/editdatahtml.php'</script>";
+		echo "<script>window.location.href = '../php/editdata.php'</script>";
 	}
 
 }else{
-	header("Location: editdatahtml.php");
+	header("Location: editdata.php");
 }
 
 ?>

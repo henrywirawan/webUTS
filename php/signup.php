@@ -98,7 +98,7 @@ if (isset($_POST["firstName"]) &&
 			    	//SUKSES SIGNUP
 			    	?>
 			    	<script type='text/javascript'>;
-		        		alert('Signup Success. Please wait for admin confirmation!');
+		        		alert('Signup Success. Login and start to use keeper!');
 		        		window.location.href = '../php/login.php';
 		        	</script>";
 		        	<?php
@@ -117,7 +117,7 @@ if (isset($_POST["firstName"]) &&
 	if (isset($_SESSION["username"])){
 		header("Location: ../php/logouttosignup.php");
 	}else{
-		header("Location: ../html/signup.html");
+		header("Location: ../php/signupview.php");
 	}
 
 }

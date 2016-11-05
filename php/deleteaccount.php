@@ -12,7 +12,13 @@ if (! isset($_SESSION["username"])){
 	$query->bind_param("s", $username);
 	$result = $query->execute();
 	if (! $result)
-        die("<p>Proses query gagal delete.</p>");
+        die("<p>Proses query gagal delete1.</p>");
+
+    $query = $conn->prepare("delete from tbuserkeepdata where keepUsername=?");
+	$query->bind_param("s", $username);
+	$result = $query->execute();
+	if (! $result)
+        die("<p>Proses query gagal delete2.</p>");
 
 
 	$query = $conn->prepare("update tbuserdata set status='deactivated' where username=?");
@@ -20,7 +26,8 @@ if (! isset($_SESSION["username"])){
 	$result = $query->execute();
 	if (! $result)
         die("<p>Proses query gagal update.</p>");
-
+    
+	echo "<script type='text/javascript'>alert('You have successfully delete your account! BYE!!!')</script>";
     echo "<script>window.location.href = '../php/home.php'</script>";
 }
 

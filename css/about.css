@@ -1,0 +1,87 @@
+
+			@import url(http://weloveiconfonts.com/api/?family=entypo);
+			/* entypo */
+			[class*="entypo-"]:before {
+	 			font-family: 'entypo', sans-serif;
+ 		 		
+			}
+
+			body{
+				font-family: "Montserrat",arial,serif;
+			}
+			body{
+				color: #3a3a3a;
+				font-size: 12px;
+				line-height: 1.55;
+				letter-spacing: 1.22px;
+			}
+
+
+
+			strong{
+				font-weight: 700;
+			}
+
+			img{
+				max-width: 100%;
+				height: auto;
+				border:1px solid #e6e6e6;
+			}
+
+			a{
+				color: #5d83de;
+				text-decoration: none;
+				transition:0.3s;
+				
+			}
+
+
+
+			a:hover{
+				color: #3343d2;
+				transition:0.3s;
+			}
+
+			i{
+				font-style: normal;
+			}
+
+			
+			.wrapper{
+				top:0px;
+				margin-top:-16px;
+				margin-left:-10px;
+				margin-right:-10px;
+
+			}
+			
+
+
+			
+			/*******body******/
+			.body{
+				margin-top: 20px;
+				width:1200px;
+				
+				float:left;
+			}
+
+			.body-wrapper{
+				margin:0 auto;
+				width:1200px;
+
+			}
+
+			.about-container{
+				float:left;
+				width:1000px;
+				margin-left:100px;
+				margin-right:100px;
+				
+			}
+
+			.body p{
+				font-weight: bold;
+				font-size: 15px;
+
+			}

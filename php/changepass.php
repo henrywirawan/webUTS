@@ -85,7 +85,7 @@ if (isset($_POST["oldpassword"]) &&
 
 
 }else{
-	header("Location: ../html/changepass.html");
+	header("Location: ../php/changepassview.php");
 
 }
 

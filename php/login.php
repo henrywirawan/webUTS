@@ -10,7 +10,7 @@ $conn = konek_db();
 if (isset($_SESSION["username"])){
 	header("Location: home.php");
 }else if (!isset($_POST["username"]) && !isset($_POST["password"])){
-	header("Location: ../html/login.html");
+	header("Location: ../php/loginview.php");
 }
 
 // jika belum login dan sudah kirim username dan pass
@@ -36,7 +36,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])){
 
 	}else{
 		echo "<script type='text/javascript'>alert('Invalid Username or Password')</script>";
-		echo "<script>window.location.href = '../html/login.html'</script>";
+		echo "<script>window.location.href = '../php/loginview.php'</script>";
 	}
 
 }

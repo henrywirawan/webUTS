@@ -15,7 +15,7 @@
 	<div class="body-wrapper">
 		<div class="body">
 			<div class="button-container">
-				<a class="btn-add" href="../php/adddatahtml.php">+</a>
+				<a class="btn-add" href="../php/adddata.php">+</a>
 			</div>
 			<div class="table-container">
 				<table>
@@ -38,8 +38,8 @@
 					<td class='td-data'><span>{{item['url']}}</span></td>
 					<td class='td-data'><span>{{item['description']}}</span></td>
 					<td class='td-action'>
-						<a class='entypo-pencil btn-mini' href="{{item['url_delete']}}"></a>
-						<a class='entypo-trash btn-mini' onclick="deletedata({{item['url_delete']}})" style="cursor:pointer;"></a>
+						<a class='entypo-pencil btn-mini' href="{{item['url_edit']}}"></a>
+						<a class='entypo-trash btn-mini' href="{{item['url_delete']}}" style="cursor:pointer;"></a>
 					</td>
 					</tr>
 
@@ -60,7 +60,7 @@
 	    if (r == true) {
 	        window.location.href = urldel;
 	    } else {
-	        window.location.href = '../php/readdatahtml.php';
+	        window.location.href = '../php/readdata.php';
 	    }
 	}
 	</script>
