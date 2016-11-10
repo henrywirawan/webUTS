@@ -1,13 +1,17 @@
 <?php
 session_start();
-$idKeepData = time();
-require_once "../twig.php";
-if (isset($_SESSION['username'])){
-	echo $twig->render("tphp/tadddata.php", array('idkeepdata' => $idKeepData));
-	echo $twig->render("tphp/tadddata.php", array('keepusername' => $_SESSION['username']));
+require_once "header.php";
+if (isset($_SESSION["username"])){
+	global $firstName;
+	global $keepUsername;
+	$idKeepData = time();
+	echo $twig->render("tphp/tadddata.php", array(
+		'keepusername' => $keepUsername,
+		'firstname' => $firstName,
+		'idkeepdata' => $idKeepData));
 	
 }else{
-	header("Location: login.php");
+	echo $twig->render("tphp/tlogin.php", array('keepusername' => null));
 }
 
 

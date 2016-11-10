@@ -1,20 +1,15 @@
 <?php
 session_start();
-require_once "../twig.php";
-require_once "db.php";
-$conn = konek_db();
-
-if (! isset($_SESSION["username"])){
-	header("Location: login.php");
+require_once "header.php";
+if (isset($_SESSION["username"])){
+	global $firstName;
+	global $keepUsername;
 }else{
-	$keepUsername = $_SESSION["username"];
-	$idKeepData = time();
+	echo $twig->render("tphp/tlogin.php", array('keepusername' => null));
 }
 
-
-
 if (! isset($_GET['idKeepData']))
-	die("<p>Informasi produk tidak ditemukan</p>");
+	die("<p>ID Keep not found</p>");
 
 
 
@@ -50,7 +45,8 @@ if (! $error){
 		'password' => $password, 
 		'url' => $url, 
 		'description' => $description, 
-		'keepusername' => $_SESSION['username']));
+		'keepusername' => $keepUsername,
+		'firstname' => $firstName));
 }else{
 	die("Fail Render");
 }

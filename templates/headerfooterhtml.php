@@ -19,7 +19,7 @@
 					<div class="left-menu">
 						<ul>
 							<li class=li-home><a href="../php/home.php">Home<span class="underline"></span></a></li>
-							<li class=li-shop><a href="../php/mykeep.php">My Keep<span class="underline"></span></a></li>
+							<li class=li-shop><a href="../php/readdata.php">My Keep<span class="underline"></span></a></li>
 							<li class=li-about><a href="../php/about.php">About<span class="underline"></span></a></li>
 						</ul>
 					</div>

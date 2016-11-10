@@ -20,10 +20,10 @@
 					<form class="form-box" method="post" enctype="multipart/form-data">
 						<div class="content">
 							<p>What are you going to do?</p>
-							<a href="../php/changepass.php">
+							<a href="../php/changepassview.php">
 								<button type="button" value="" class="btn-button uppercase">Change My Password</button>
 							</a>
-							<a href="../php/changeemail.php">
+							<a href="../php/changeemailview.php">
 								<button type="button" value="" class="btn-button uppercase">Change My Email</button>
 							</a>
 

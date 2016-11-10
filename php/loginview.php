@@ -1,10 +1,15 @@
 <?php
 session_start();
-require_once "../twig.php";
-if (isset($_SESSION['username']))
-	echo $twig->render("tphp/tlogin.php", array('keepusername' => $_SESSION['username']));
-else
+require_once "header.php";
+if (isset($_SESSION["username"])){
+	global $firstName;
+	global $keepUsername;
+	echo $twig->render("tphp/thome.php", array(
+			'keepusername' => $keepUsername,
+			'firstname' => $firstName));
+}else{
 	echo $twig->render("tphp/tlogin.php", array('keepusername' => null));
+}
 
 
 ?>

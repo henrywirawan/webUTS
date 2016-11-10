@@ -1,5 +1,4 @@
 <?php
-
 require_once "../twig.php";
 require_once "db.php";
 $conn = konek_db();
@@ -23,17 +22,9 @@ if (isset($_SESSION['username'])){
 
 	$firstName = $data->firstName;
 
-	if (! $error){
-		echo $twig->render("tphp/thome.php", array(
-			'keepusername' => $keepUsername,
-			'firstname' => $firstName));
-	}else{
-		die("Fail render");
-	}
 	
 }
-else
-	echo $twig->render("tphp/thome.php", array('keepusername' => null));
+
 
 
 ?>

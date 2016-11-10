@@ -49,7 +49,7 @@
 					
 					<input type="submit" value="Create" class="btn-button uppercase">
 					
-					<p>Already have an account? <a href="../php/login.php">Login here</a></p>
+					<p>Already have an account? <a href="../php/loginview.php">Login here</a></p>
 				</div>
 			</form>
 		</div>

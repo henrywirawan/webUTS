@@ -1,13 +1,14 @@
 <?php
 session_start();
-require_once "../twig.php";
-require_once("db.php");
-$conn = konek_db();
-
-if (isset($_SESSION['username'])){
-	echo $twig->render("tphp/tchangepass.php", array('keepusername' => $_SESSION['username']));
+require_once "header.php";
+if (isset($_SESSION["username"])){
+	global $firstName;
+	global $keepUsername;
+	echo $twig->render("tphp/tchangepass.php", array(
+		'keepusername' => $keepUsername,
+		'firstname' => $firstName));
 }else{
-	header("Location: ../php/login.php");
+	echo $twig->render("tphp/tlogin.php", array('keepusername' => null));
 }
 
 

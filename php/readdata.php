@@ -1,14 +1,9 @@
 <?php
 session_start();
-require_once "../twig.php";
-require_once "db.php";
-$conn = konek_db();
-
-
-
-if (isset($_SESSION['username'])){
-	
-	$keepUsername = $_SESSION["username"];
+require_once "header.php";
+if (isset($_SESSION["username"])){
+	global $firstName;
+	global $keepUsername;
 }else{
 	header("Location: login.php");
 }
@@ -47,7 +42,8 @@ while ($row = $rows->fetch_object()) {
 if (! $error){
 	echo $twig->render("tphp/treaddata.php", array(
 		'items'=>$data, 
-		'keepusername' => $_SESSION['username']));
+		'keepusername' => $keepUsername,
+		'firstname' => $firstName));
 }else{
 	die("Fail Render");
 }

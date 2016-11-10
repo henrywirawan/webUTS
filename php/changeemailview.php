@@ -1,18 +1,17 @@
 <?php
 session_start();
-require_once "../twig.php";
-require_once("db.php");
-$conn = konek_db();
-
-if (! isset($_SESSION["username"])){
-	header("Location: ../php/login.php");
-}else{
+require_once "header.php";
+if (isset($_SESSION["username"])){
+	global $firstName;
+	global $keepUsername;
 	$username = $_SESSION["username"];
+}else{
+	
 }
 
 //cari email berdasarkan username
 $query = $conn->prepare("select * from tbuserdata where username=?");
-$query->bind_param("s", $username);
+$query->bind_param("s", $keepUsername);
 $result = $query->execute();
 
 $error=false;
@@ -30,9 +29,11 @@ $data = $rows->fetch_object();
 $oldemail = $data->email;
 
 if (! $error){
+	
 	echo $twig->render("tphp/tchangeemail.php", array(
-		'username' => $username,
-		'oldemail' => $oldemail
+		'oldemail' => $oldemail,
+		'firstname' => $firstName,
+		'keepusername' => $keepUsername
 		));
 }else{
 	die("Fail render");

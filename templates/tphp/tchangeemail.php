@@ -43,6 +43,7 @@
 				<div class="buttons-set">
 					
 					<input type="submit" value="Submit" class="btn-button uppercase">
+					<p>Don't want to change email? <a href="../php/myaccount.php">Back to My Account</a></p>
 
 				</div>
 			</form>

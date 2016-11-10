@@ -35,7 +35,7 @@
 
 				<div class="buttons-set">
 					<a><input value="Sign In" class="btn-button uppercase" type="submit"></a>
-					<p>New Here? <a href="../php/signup.php">Create An Account</a></p>
+					<p>New Here? <a href="../php/signupview.php">Create An Account</a></p>
 				</div>
 			</form>
 		</div>

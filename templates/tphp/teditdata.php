@@ -50,7 +50,7 @@
 					
 					<input type="submit" value="Submit" class="btn-button uppercase">
 					
-					<p>Don't want to edit data? <a href="../php/mykeep.php">Back to My Keep</a></p>
+					<p>Don't want to edit data? <a href="../php/readdata.php">Back to My Keep</a></p>
 				</div>
 			</form>
 		</div>
