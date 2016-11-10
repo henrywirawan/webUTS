@@ -26,14 +26,12 @@
 					<div class="right-menu">
 						<ul>
 							<li class="inline li-menu">
-							<span class="
 							{% if keepusername == null %}
-								entypo-menu
+								<span class="entypo-menu span-inline"></span>
 							{% else %}
-								entypo-user
+								<span class="entypo-user span-inline"><span class="firstname">{{firstname}}</span></span>
 							{% endif %}
-								 span-inline"
-								  ></span>
+								 
 								<div class="blured-bg">
 								</div>
 								<div class="switcher-content-menu">

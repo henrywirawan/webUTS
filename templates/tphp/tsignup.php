@@ -21,11 +21,11 @@
 					<ul class="form-list">
 						<li>
 							<label class="hidden-label">First Name</label>
-							<input name="firstName" id="FirstName" class="input-full" placeholder="First Name" autocapitalize="words" autofocus="" type="text">
+							<input name="firstName" id="FirstName" class="input-full" placeholder="Name can not be change later" autocapitalize="words" autofocus="" type="text">
 						</li>
 						<li>
 							<label class="hidden-label">Last Name</label>
-							<input name="lastName" id="LastName" class="input-full" placeholder="Last Name" autocapitalize="words" type="text">
+							<input name="lastName" id="LastName" class="input-full" placeholder="Name can not be change later" autocapitalize="words" type="text">
 						</li>
 						<li>
 							<label class="hidden-label">Username</label>

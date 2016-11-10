@@ -59,11 +59,7 @@
 			}
 
 
-			div.right-menu{
-				float:right;
-				margin-top: -4px;
-				cursor:default;
-			}
+			
 
 			div.left-menu li a{
 				float:left;
@@ -81,23 +77,34 @@
 				
 			}
 
+			div.right-menu{
+				float:right;
+				margin-top: -4px;
+				cursor:default;
+			}
 			
 
 			div.right-menu li span.span-inline{
 				float:right;
 				display: block;
 				height: 22px;
-				width: 22px;
+				width: auto;
 				color: #cccccc;
 				padding: 20px 22px;
 				text-decoration: none;
 				text-align: center;
-				border-left:1px solid #cccccc;
+				border-left: 1px solid #cccccc;
 				font-size: 20px;
 				font-weight: bold;
 				line-height: 1.2;
-
 				
+			}
+
+			span.firstname{
+				padding-left: 12px;
+				text-transform: capitalize;
+				font-size: 16px;
+
 			}
 
 			.left-menu li{

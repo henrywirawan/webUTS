@@ -39,7 +39,7 @@
 					<td class='td-data'><span>{{item['description']}}</span></td>
 					<td class='td-action'>
 						<a class='entypo-pencil btn-mini' href="{{item['url_edit']}}"></a>
-						<a class='entypo-trash btn-mini' href="{{item['url_delete']}}" style="cursor:pointer;"></a>
+						<a class='entypo-trash btn-mini' href="{{item['url_delete']}}" style="cursor:pointer;" onclick="return deletedata()"></a>
 					</td>
 					</tr>
 
@@ -55,12 +55,12 @@
 
 {% block script %}
 	<script>
-	function deletedata(urldel) {
+	function deletedata() {
 	    var r = confirm("Are you sure you want to delete this data?");
 	    if (r == true) {
-	        window.location.href = urldel;
+	        return true;
 	    } else {
-	        window.location.href = '../php/readdata.php';
+	        return false;
 	    }
 	}
 	</script>
