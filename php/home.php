@@ -8,7 +8,6 @@ if (isset($_SESSION["username"])){
 		'keepusername' => $keepUsername,
 		'firstname' => $firstName));
 }else{
-
 	echo $twig->render("tphp/thome.php", array('keepusername' => null));
 }
 

@@ -35,8 +35,8 @@ if (isset($_POST["username"]) && isset($_POST["password"])){
 
 
 	}else{
-		echo "<script type='text/javascript'>alert('Invalid Username or Password')</script>";
-		echo "<script>window.location.href = '../php/loginview.php'</script>";
+]
+
 	}
 
 }

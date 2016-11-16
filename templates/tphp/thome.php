@@ -46,7 +46,7 @@
 					</div>
 					<div class="overlay">
 						<span class="widget widget-category-link">
-							<a href="../php/mykeep.php" class="entypo-right-thin"></a>
+							<a href="../php/readdata.php" class="entypo-right-thin"></a>
 						</span>
 					</div>
 				</div>
