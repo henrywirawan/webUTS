@@ -4,6 +4,7 @@
 {% block style %}
 	<link rel="stylesheet" href="../css/body-table.css">
 	<link rel="stylesheet" href="../css/body-title.css">
+	<link rel="stylesheet" href="../css/page-url.css">
 {% endblock %}
 
 {% block title %}| My Keep{% endblock %}
@@ -46,7 +47,42 @@
 					{% endfor %}
 
 				</table>	
-			</div>		
+			</div>
+
+			<div class="pagination-container">
+				<ul class="pages">
+				<li class="previous">
+					<a
+					{% if previous_page == 0 %}
+						style="cursor: not-allowed;" 
+						href="#"
+					{% else %}
+						href="readdata.php?&p={{previous_page}}"
+					{% endif %}
+					>Previous</a>
+				</li>
+				
+				{% for url in page_urls %}
+					{% if p == loop.index %}
+					<li class="current-page"><a href="#">{{loop.index}}</a></li>
+					{% else %}
+					<li class="not-current-page"><a href="{{url}}">{{loop.index}}</a></li>
+					{% endif %}
+				{% endfor %}
+					<li class="next">
+					<a
+					{% if next_page == 0 %}
+						style="cursor: not-allowed;" 
+						href="#"
+					{% else %}
+						href="readdata.php?&p={{next_page}}"
+					{% endif %}
+					>Next</a>
+					</li>
+				</ul>
+			</div>
+			
+				
 		</div>	
 	</div>
 		

@@ -1,0 +1,64 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+		font-family: 'entypo', sans-serif;
+ 		
+}
+
+.pagination-container{
+	float:right;
+	width: 300px;
+	margin-right: 150px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+
+ul.pages{
+	list-style-type: none;
+
+}
+
+ul.pages li a{
+	display: inline;
+	font-size: 15px;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	text-decoration: none;
+	
+	border: 1px solid #ddd;
+}
+
+.not-current-page a, .previous a, .next a{
+	background-color: #fff;
+	color: #666;
+}
+
+ul.pages li.not-current-page a:hover{
+	background-color: #dbdbdb;
+}
+
+
+li.current-page a{
+	cursor: default;
+	background-color: #337ab7;
+	border: 1px solid #337ab7;
+	
+	color: #fff;
+	
+}
+
+
+
+li.previous a{
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+}
+
+li.next a{
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+

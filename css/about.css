@@ -8,14 +8,11 @@
 
 			body{
 				font-family: "Montserrat",arial,serif;
-			}
-			body{
 				color: #3a3a3a;
 				font-size: 12px;
 				line-height: 1.55;
 				letter-spacing: 1.22px;
 			}
-
 
 
 			strong{
@@ -46,7 +43,7 @@
 				font-style: normal;
 			}
 
-			
+
 			.wrapper{
 				top:0px;
 				margin-top:-16px;
@@ -62,7 +59,7 @@
 			.body{
 				margin-top: 20px;
 				width:1200px;
-				
+				min-height: 400px;
 				float:left;
 			}
 

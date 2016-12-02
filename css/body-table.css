@@ -7,14 +7,11 @@
 
 			body{
 				font-family: "Montserrat",arial,serif;
-			}
-			body{
 				color: #3a3a3a;
 				font-size: 12px;
 				line-height: 1.55;
 				letter-spacing: 1.22px;
 			}
-
 
 			strong{
 				font-weight: 700;
@@ -41,6 +38,9 @@
 				font-style: normal;
 			}
 
+			
+
+
 			.wrapper{
 				top:0px;
 				margin-top:-16px;
@@ -49,9 +49,6 @@
 
 			}
 
-			
-
-			
 
 			/*******body******/
 			.body{
@@ -123,6 +120,7 @@
 				margin: 0 auto;
 				margin-top: 20px;
 				width: 80%;
+				height: 220px;
 
 			}
 
@@ -174,13 +172,14 @@
 			}
 
 			.spnpass{
-				filter: blur(2.5px);
+				filter: blur(3px);
 			}
 
 			.td-data{
 				border: 1px solid #cccccc;
 				
 				padding-left: 4px;
+				width:22%;
 			}
 
 
@@ -189,6 +188,7 @@
 				background: #e0e0e0;
 				border-bottom: 2px solid #dddddd;
 				border-top: 2px solid #dddddd;
+				width:22%;
 				 
 			}
 

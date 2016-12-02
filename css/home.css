@@ -8,13 +8,14 @@
 
 			body{
 				font-family: "Montserrat",arial,serif;
-			}
-			body{
 				color: #3a3a3a;
 				font-size: 12px;
 				line-height: 1.55;
 				letter-spacing: 1.22px;
+				
 			}
+
+
 
 
 			strong{
@@ -52,6 +53,7 @@
 
 
 			/*******body******/
+			
 			.body{
 				margin-top: 0px;
 				width:1200px;
